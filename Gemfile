@@ -1,15 +1,10 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-ruby '2.1.2'
+ruby "2.6.3"
 
-gem 'rails', '~> 4.0.0'
+gem "rails"
+gem "omniauth"
+gem "sqlite3"
 
-gem 'omniauth'
-
-group :development do
-  gem 'sqlite3'
-end
-
-group :production do
-  gem 'pg'
-end
+# gem "omniauth-wip", path: "../omniauth-wip"
+gem "omniauth-wip"
